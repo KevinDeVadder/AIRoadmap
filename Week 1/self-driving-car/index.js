@@ -105,7 +105,7 @@ async function initModel(){
     .generator(dataGenerator)
     // Convert each datapoint to TensorFlow-specific representation
     .map(([imageBuffer, steering]) => {
-        const xs = tf.decodeJpeg(imageBuffer).div(255);
+        const xs = tf.node.decodeJpeg(imageBuffer).div(255);
         const ys = tf.tensor1d([steering]);
         return { xs, ys };
     })
