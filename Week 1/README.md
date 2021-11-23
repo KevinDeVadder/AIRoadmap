@@ -5,11 +5,10 @@ References (day 1):
 
 - https://www.youtube.com/watch?v=LlKAna21fLE - A friendly introduction to linear algebra for ML (ML Tech Talks)
 - https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
-- https://levelup.gitconnected.com/run-a-self-driving-car-using-javascript-and-tensorflow-js-8b9b3f7af23d - Run a self-driving car using JavaScript and TensorFlow.js
-- https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 2
-- Theoretical Neuroscience Computational and Mathematical Modeling of Neural Systems - Peter Dayan and LF Abbott - Chapter 1
 
 References (day 2):
+- https://levelup.gitconnected.com/run-a-self-driving-car-using-javascript-and-tensorflow-js-8b9b3f7af23d - Run a self-driving car using JavaScript and TensorFlow.js
+- https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
 - https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 2
 - Theoretical Neuroscience Computational and Mathematical Modeling of Neural Systems - Peter Dayan and LF Abbott - Chapter 1
 

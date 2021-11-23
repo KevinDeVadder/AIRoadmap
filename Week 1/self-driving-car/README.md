@@ -1,0 +1,2 @@
+For this project, I will be following the steps in the following article: https://levelup.gitconnected.com/run-a-self-driving-car-using-javascript-and-tensorflow-js-8b9b3f7af23d.
+After succesfully completing the tutorial, I will build my own track in Unity, in order to test my knowledge.
