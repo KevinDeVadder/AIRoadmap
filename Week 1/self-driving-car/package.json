@@ -1,0 +1,15 @@
+{
+  "name": "self-driving-car",
+  "version": "1.0.0",
+  "description": "For this project, I will be following the steps in the following article: https://levelup.gitconnected.com/run-a-self-driving-car-using-javascript-and-tensorflow-js-8b9b3f7af23d.\r After succesfully completing the tutorial, I will build my own track in Unity, in order to test my knowledge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.11.0",
+    "csv-parser": "^3.0.0"
+  }
+}
