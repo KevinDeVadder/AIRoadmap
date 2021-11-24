@@ -21,6 +21,7 @@ tf.loadLayersModel(`file://${modelDir}/model.json`).then((model) => {
         .div(255)
         .reshape([1, 160, 320, 3]);
       const steering = model.predict(imageTensor).squeeze().arraySync();
+      console.log("Steering: " + String(steering))
 
       const throttle = 1 - telemetry.speed / maxSpeed;
 

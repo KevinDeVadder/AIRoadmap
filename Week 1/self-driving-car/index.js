@@ -40,56 +40,62 @@ async function* dataGenerator() {
 }
 
 async function initModel(){
-    //Create Model
-    const model = tf.sequential({
-        layers: [
-        // Cropping layer
-        tf.layers.cropping2D({
-            //Crop the top landscape and the car hood
-            cropping: [[75, 25], [0, 0]],
-            //Set input shape
-            inputShape: [160, 320, 3]
-        }),
+    let model
 
-        // 1st convolutional layer
-        tf.layers.conv2d({
-            filters: 16,
-            kernelSize: [3, 3],
-            strides: [2, 2],
-            activation: 'relu'
-        }),
-    
-        // 1st max-pooling layer
-        //Max pooling keeps the most important information from the conv2d
-        tf.layers.maxPool2d({ 
-            poolSize: [2, 2] 
-        }),
+    try {
+        model = await tf.loadLayersModel(`file://${modelDir}/model.json`)
+        console.log(`Model loaded from: ${modelDir}`)
+    } catch {
+        //Create Model
+        const model = tf.sequential({
+            layers: [
+            // Cropping layer
+            tf.layers.cropping2D({
+                //Crop the top landscape and the car hood
+                cropping: [[75, 25], [0, 0]],
+                //Set input shape
+                inputShape: [160, 320, 3]
+            }),
 
-        // 2nd convolutional layer
-        tf.layers.conv2d({
-            filters: 32,
-            kernelSize: [3, 3],
-            strides: [2, 2],
-            activation: 'relu'
-        }),
+            // 1st convolutional layer
+            tf.layers.conv2d({
+                filters: 16,
+                kernelSize: [3, 3],
+                strides: [2, 2],
+                activation: 'relu'
+            }),
+        
+            // 1st max-pooling layer
+            //Max pooling keeps the most important information from the conv2d
+            tf.layers.maxPool2d({ 
+                poolSize: [2, 2] 
+            }),
 
-        // 2nd max-pool layer
-        tf.layers.maxPool2d({ 
-            poolSize: [2, 2] 
-        }),
+            // 2nd convolutional layer
+            tf.layers.conv2d({
+                filters: 32,
+                kernelSize: [3, 3],
+                strides: [2, 2],
+                activation: 'relu'
+            }),
 
-        // Dense layers with dropout layer
-        tf.layers.flatten(),
-        tf.layers.dense({ units: 1024, activation: 'relu' }),
-        tf.layers.dropout({ rate: 0.25 }),
-        tf.layers.dense({ units: 128, activation: 'relu' }),
+            // 2nd max-pool layer
+            tf.layers.maxPool2d({ 
+                poolSize: [2, 2] 
+            }),
 
-        //Output layer
-        tf.layers.dense({ units: 1, activation: 'linear' })
+            // Dense layers with dropout layer
+            tf.layers.flatten(),
+            tf.layers.dense({ units: 1024, activation: 'relu' }),
+            tf.layers.dropout({ rate: 0.25 }),
+            tf.layers.dense({ units: 128, activation: 'relu' }),
 
-        ]
-    })
+            //Output layer
+            tf.layers.dense({ units: 1, activation: 'linear' })
 
+            ]
+        })
+    }
     model.compile({
         optimizer: 'adam',
         loss: 'meanSquaredError'
