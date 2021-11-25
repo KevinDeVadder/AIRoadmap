@@ -12,11 +12,12 @@ References (day 2):
 
 References (day 3):
 - https://levelup.gitconnected.com/run-a-self-driving-car-using-javascript-and-tensorflow-js-8b9b3f7af23d - Run a self-driving car using JavaScript and TensorFlow.js
-- https://www.youtube.com/watch?v=2Js4KiDwiyU - ML-Agents 1.0+ | Create your own A.I. | Full Walkthrough | Unity3D
 - https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
-- Theoretical Neuroscience Computational and Mathematical Modeling of Neural Systems - Peter Dayan and LF Abbott - Chapter 1
+- https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 2
 
 References (day 4):
+- https://www.youtube.com/watch?v=2Js4KiDwiyU - ML-Agents 1.0+ | Create your own A.I. | Full Walkthrough | Unity3D
+- https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
 - https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 2
 - Theoretical Neuroscience Computational and Mathematical Modeling of Neural Systems - Peter Dayan and LF Abbott - Chapter 1
 

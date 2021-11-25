@@ -35,7 +35,6 @@ async function* dataGenerator() {
       }
   
       csvStream.destroy();
-      //TODO: Read second track
     }
 }
 
@@ -47,7 +46,7 @@ async function initModel(){
         console.log(`Model loaded from: ${modelDir}`)
     } catch {
         //Create Model
-        const model = tf.sequential({
+        model = tf.sequential({
             layers: [
             // Cropping layer
             tf.layers.cropping2D({
@@ -59,9 +58,9 @@ async function initModel(){
 
             // 1st convolutional layer
             tf.layers.conv2d({
-                filters: 16,
-                kernelSize: [3, 3],
-                strides: [2, 2],
+                filters: 64,
+                kernelSize: [5, 5],
+                strides: [1, 1],
                 activation: 'relu'
             }),
         
@@ -73,9 +72,9 @@ async function initModel(){
 
             // 2nd convolutional layer
             tf.layers.conv2d({
-                filters: 32,
-                kernelSize: [3, 3],
-                strides: [2, 2],
+                filters: 128,
+                kernelSize: [5, 5],
+                strides: [1, 1],
                 activation: 'relu'
             }),
 
@@ -86,9 +85,9 @@ async function initModel(){
 
             // Dense layers with dropout layer
             tf.layers.flatten(),
-            tf.layers.dense({ units: 1024, activation: 'relu' }),
+            tf.layers.dense({ units: 2048, activation: 'relu' }),
             tf.layers.dropout({ rate: 0.25 }),
-            tf.layers.dense({ units: 128, activation: 'relu' }),
+            tf.layers.dense({ units: 256, activation: 'relu' }),
 
             //Output layer
             tf.layers.dense({ units: 1, activation: 'linear' })
