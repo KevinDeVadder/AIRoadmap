@@ -51,14 +51,14 @@ async function initModel(){
             // Cropping layer
             tf.layers.cropping2D({
                 //Crop the top landscape and the car hood
-                cropping: [[75, 25], [0, 0]],
+                cropping: [[50, 25], [0, 0]],
                 //Set input shape
                 inputShape: [160, 320, 3]
             }),
 
             // 1st convolutional layer
             tf.layers.conv2d({
-                filters: 64,
+                filters: 16,
                 kernelSize: [5, 5],
                 strides: [1, 1],
                 activation: 'relu'
@@ -72,7 +72,7 @@ async function initModel(){
 
             // 2nd convolutional layer
             tf.layers.conv2d({
-                filters: 128,
+                filters: 32,
                 kernelSize: [5, 5],
                 strides: [1, 1],
                 activation: 'relu'
