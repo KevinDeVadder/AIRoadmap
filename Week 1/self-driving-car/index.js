@@ -27,7 +27,7 @@ async function* dataGenerator() {
         const leftImageBuffer = fs.promises.readFile(left);
         const rightImageBuffer = fs.promises.readFile(right);
   
-        const offset = 0.333;
+        const offset = 0.25;
   
         yield [await centerImageBuffer, Number(steering)];
         yield [await leftImageBuffer, Number(steering) + offset];
@@ -51,7 +51,7 @@ async function initModel(){
             // Cropping layer
             tf.layers.cropping2D({
                 //Crop the top landscape and the car hood
-                cropping: [[50, 25], [0, 0]],
+                cropping: [[75, 25], [0, 0]],
                 //Set input shape
                 inputShape: [160, 320, 3]
             }),

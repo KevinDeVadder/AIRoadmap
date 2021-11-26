@@ -7,4 +7,7 @@ Test 3 - Model made by using data from the first track and the second track. I h
 Test 4 - Model made by using data from the first track and the second track | Loss - 0.174 | Epochs - 10 | It crashes on the first and second track. I believe this is because I have switched the kernel size to 5, 5.
 Test 5 - Model made by using data from the first track and the second track | Loss - 0.117 | Epochs - 10 | Works perfectly on the first track. It crashes on the second one.
 Test 6 - Model made by using data from the first track and the second track | Loss - 0.123 | Epochs - 15 | Works perfectly on the first track. It crashes on the second one at the middle of the track, on a tight rurn.
-Test 7 - Model made by using data from the first track and the second track, with less pixels cropped from the top of the img | Loss - 0. | Epochs - 20 | 
+Test 7 - Model made by using data from the first track and the second track, with less pixels cropped from the top of the img | Loss - 0.199 | Epochs - 20 | It doesn't work on either track.
+Test 8 - Model made by using data from the first track and the second track, with a smaller lateral offset for the images. | Loss - 0.105 | Epochs - 5 | Works perfectly on the first track. It crashes on the second one.
+Test 9 - Model made by traing the 8th test 5 epochs more | Loss - 0.106 | Epochs - 5 | Works perfectly on the first track. It crashes on the second one.
+Test 10 - Model made by traing the 8th test 5 epochs more | Loss - 0.106 | Epochs - 5 | Works perfectly on the first track. It crashes on the second one.
