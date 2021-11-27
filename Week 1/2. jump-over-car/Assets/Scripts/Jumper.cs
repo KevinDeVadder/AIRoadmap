@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using Unity.MLAgents;
-using Unity.MLAgents.Sensors;
+using Unity.MLAgents.Actuators;
 using UnityEngine;
 
-public class Jumper : MonoBehaviour
+public class Jumper : Agent
 {
     [SerializeField] private float jumpForce;
     [SerializeField] private KeyCode jumpKey;
@@ -16,12 +14,33 @@ public class Jumper : MonoBehaviour
     private int score = 0;
     public event Action OnReset;
     
-    public void Awake()
+    public override void Initialize()
     {
         rBody = GetComponent<Rigidbody>();
         startingPosition = transform.position;
     }
-    
+
+    public override void OnActionReceived(ActionBuffers actions)
+    {
+        if (Mathf.FloorToInt(actions.DiscreteActions[0]) == 1)
+        {
+            Jump();
+        }
+    }
+
+    public override void OnEpisodeBegin()
+    {
+        Reset();
+    }
+
+    private void FixedUpdate()
+    {
+        if (jumpIsReady)
+        {
+            RequestDecision();
+        }
+    }
+
     private void Jump()
     {
         if (jumpIsReady)
@@ -30,13 +49,6 @@ public class Jumper : MonoBehaviour
             jumpIsReady = false;
         }
     }
-
-    private void Update()
-    {
-        if (Input.GetKey(jumpKey))
-            Jump();
-    }
-
     private void Reset()
     {
         score = 0;
@@ -53,9 +65,20 @@ public class Jumper : MonoBehaviour
     {
         if (collidedObj.gameObject.CompareTag("Street"))
             jumpIsReady = true;
-        
+
         else if (collidedObj.gameObject.CompareTag("Mover") || collidedObj.gameObject.CompareTag("DoubleMover"))
-            Reset();
+        {
+            Debug.Log(score);
+            if(score == 0)
+            {
+                AddReward(-1.0f);
+            }
+            else
+            {
+                AddReward(score);
+            }
+            EndEpisode();
+        }
     }
 
     private void OnTriggerEnter(Collider collidedObj)
