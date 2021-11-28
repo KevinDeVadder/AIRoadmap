@@ -27,6 +27,7 @@ References (day 5):
 
 References (day 6):
 - https://www.khanacademy.org/math/differential-calculus - Khan Academy Differential Calculus
+- Own project: building a self driving car in Unity, with Unity MLAgents
 
 References (day 7):
 - Own project: building a self driving car in Unity, with Unity MLAgents
