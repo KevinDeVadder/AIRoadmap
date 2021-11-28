@@ -26,6 +26,9 @@ References (day 5):
 - https://www.youtube.com/watch?v=2Js4KiDwiyU - ML-Agents 1.0+ | Create your own A.I. | Full Walkthrough | Unity3D
 
 References (day 6):
+- https://www.khanacademy.org/math/differential-calculus - Khan Academy Differential Calculus
+
+References (day 7):
 - Own project: building a self driving car in Unity, with Unity MLAgents
 - https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
 - Theoretical Neuroscience Computational and Mathematical Modeling of Neural Systems - Peter Dayan and LF Abbott - Chapter 1
