@@ -5,8 +5,8 @@ The link for the video will be posted here as well.
 
 My initial plan for the project will be as follows:
 
-1. Build 3D learning track for car agents
-2. Manually add targets through the track for agents to get to.
+1. Build 3D learning track for car agents - DONE
+2. Manually add targets through the track for agents to get to. - DONE
 3. Set observations, actions and rewards for the agent.
 4. After sufficient training, compile the model and test it on the Udacity Self Driving Car Nanodegree Simulator.
 
