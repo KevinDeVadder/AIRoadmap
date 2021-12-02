@@ -63,6 +63,7 @@ crashlytics-build.properties
 
 
 Assets/ML-Agents/
+Assets/MST_Creator/
 Library
 
 **/.DS_Store
