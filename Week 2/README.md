@@ -26,3 +26,8 @@ References (day 4):
 - https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 2
 - Theoretical Neuroscience Computational and Mathematical Modeling of Neural Systems - Peter Dayan and LF Abbott - Chapter 1
 - Own project: building a self driving car in Unity, with Unity MLAgents (Source can be found in the "Week 1" folder)
+
+References (day 5):
+
+- https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
+- https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 2
