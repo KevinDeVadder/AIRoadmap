@@ -31,3 +31,11 @@ References (day 5):
 
 - https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
 - https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 2
+
+References (day 6):
+
+- https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
+- https://www.khanacademy.org/math/differential-calculus - Khan Academy Differential Calculus
+- https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 2
+- https://www.youtube.com/watch?v=5OVf3FBHzHI - Unity ML-Agents 1.0 - A.I. Shooting Game (FULL WALKTHROUGH)
+- Theoretical Neuroscience Computational and Mathematical Modeling of Neural Systems - Peter Dayan and LF Abbott - Chapter 1
