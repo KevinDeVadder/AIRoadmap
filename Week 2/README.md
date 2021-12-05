@@ -1,4 +1,4 @@
-In week 2, I will put even more focus more on getting a recap of mathematics, work on my personal self driving car project and build Tensorflow.js models, in order to use them in the browser.
+In week 2, I will put even more focus more on getting a recap of mathematics, work on my personal self driving car project and learn about Tensorflow models.
 
 References (day 1):
 
