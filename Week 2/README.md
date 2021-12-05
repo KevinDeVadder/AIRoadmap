@@ -39,3 +39,9 @@ References (day 6):
 - https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 2
 - https://www.youtube.com/watch?v=5OVf3FBHzHI - Unity ML-Agents 1.0 - A.I. Shooting Game (FULL WALKTHROUGH)
 - Theoretical Neuroscience Computational and Mathematical Modeling of Neural Systems - Peter Dayan and LF Abbott - Chapter 1
+
+References (day 7):
+
+- https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
+- https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 2
+- https://blog.paperspace.com/implementing-gans-in-tensorflow/ - Building a simple Generative Adversarial Network (GAN) using TensorFlow
