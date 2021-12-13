@@ -21,3 +21,11 @@ References (day 4):
 
 - https://www.khanacademy.org/math/differential-calculus - Khan Academy Differential Calculus
 - https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
+
+References (day 5):
+
+- https://www.khanacademy.org/math/differential-calculus - Khan Academy Differential Calculus
+- https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
+
+References (day 6 + 7):
+- On day 6 and 7, I participated in the "Eduhack" Hackathon, using an AR application.
