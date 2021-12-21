@@ -27,3 +27,15 @@ References (day 5):
 - https://www.khanacademy.org/math/differential-calculus - Khan Academy Differential Calculus
 - https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
 - https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 3
+
+References (day 6):
+
+- https://www.khanacademy.org/math/differential-calculus - Khan Academy Differential Calculus
+- https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
+- https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 3
+
+References (day 7):
+
+- https://www.khanacademy.org/math/differential-calculus - Khan Academy Differential Calculus
+- https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
+- https://www.coursera.org/learn/computational-neuroscience/ - Computational Neuroscience - Week 3
