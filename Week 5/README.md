@@ -9,3 +9,5 @@ References (day 2):
 
 - https://www.khanacademy.org/math/differential-calculus - Khan Academy Differential Calculus
 - https://www.khanacademy.org/math/statistics-probability/ - Khan Academy Statistics & Probability module
+
+*For the rest of the week and the next 2 weeks, I took a holiday break :D
